@@ -1,0 +1,34 @@
+
+<p-tabView>
+    
+    <p-tabPanel header="Lista Usuarios">
+        <p-table [value]="listaUsuario" selectionMode="single" [(selection)]="usuarioSeleccionado" 
+        (onRowSelect)="verObjeto()">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>id</th>
+                    <th>nombre</th>
+                    <th>correo</th>
+                    <th>celular</th>
+                    <th>user</th>
+                    <th>passwork</th>
+                    <th>cedula</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-usuario>
+                <tr [pSelectableRow]="usuario">
+                    <td>{{usuario.id}}</td>
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.correo}}</td>
+                    <td>{{usuario.celular}}</td>
+                    <td>{{usuario.user}}</td>
+                    <td>{{usuario.password}}</td>
+                    <td>{{usuario.cedula}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+    </p-tabPanel>
+   
+</p-tabView>
+
