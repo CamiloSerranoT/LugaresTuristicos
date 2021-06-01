@@ -1,7 +1,7 @@
 export class Lugaresturisticos {
     id!:number;
-    nombrelugar!:String;
+    nombreLugar!:String;
     ubicacion!:String;
-    cantidadpersonas!:number;
+    cantidadPersonas!:number;
     estado!:number;
 }

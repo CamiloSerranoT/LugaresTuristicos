@@ -10,6 +10,7 @@ import { LayoutModule } from './layout/layout.module';
 import {HttpClientModule} from '@angular/common/http';
 import { MenuPrincipalComponent } from './components/menu-principal/menu-principal.component';
 import {TabViewModule} from 'primeng/tabview';
+import { VistaLugarComponent } from './components/vista-lugar/vista-lugar.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {TabViewModule} from 'primeng/tabview';
     UsuarioComponent,
     LugaresturisticosComponent,
     HomeComponent,
-    MenuPrincipalComponent
+    MenuPrincipalComponent,
+    VistaLugarComponent
   ],
   imports: [
     BrowserModule,

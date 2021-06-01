@@ -22,7 +22,7 @@ export class LugaresturisticosComponent implements OnInit {
   public listarSitios(){
     this.lugaresTuristicosService.listar().subscribe(lista => {
       this.listaLugaresTuristicos=lista;
-      
+      console.log(lista);
     } )
   }
 
